@@ -1,2 +1,2 @@
-# portfolio-setup-mobile-first
+# Project-portfolio
 Create and setup my portfolio using mobile-first
