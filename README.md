@@ -2,9 +2,8 @@
 
 
 <div align="center">
-  <img src="logo.png" alt="logo" width="140" height="auto" />
   <br/>
-  <h3><b>Microverse First Project</b></h3>
+  <h3><b>My Portfolio</b></h3>
 
 </div>
 
@@ -24,9 +23,9 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 Hello World Microverse <a name="about-project"></a>
+# 📖 Portfolio project <a name="about-project"></a>
 
-**Hello World Microverse** is our first project. We were practicing all related about: Git/GitHub, Linters, using Templates and a few of HTML/CSS.
+**Portfolio project** is designed to understand and get skills using Figma and how to parse a design at this platform to HTML/CSS. We'll learn here how to use FlexBox CSS in a practical way.
 
 ## 🛠 Built With Visual Studio Code and NPM<a name="built-with"></a>
 
