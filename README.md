@@ -36,14 +36,14 @@ We built this project using tools as: Git client, Visual Studio Code and NPM.
 <details>
   <summary>Client</summary>
   <ul>
-    <li>HTML</li>
-    <li>CSS</li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
   </ul>
 </details>
 
 ### Key Features <a name="key-features"></a>
 
-We developed this exercise to test some skills using Git/GitHub and Linters.
+We developed this exercise to learn some skills using HTML & CSS (FlexBox).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -56,7 +56,7 @@ This job was suggested only for educative purposes.
 Clone this repository to your desired folder:
 
   cd my-folder
-  git clone git@github.com:jlcarrascof/hello-world-project.git
+  git clone git@github.com:jlcarrascof/Project-portfolio.git
 
 ### Prerequisites
 
@@ -68,7 +68,7 @@ In order to run this project you only need a web browser.
 
 To run the project, execute the following command:
 
-N/A
+Open it using VS CODE with Live Server extension.
 
 ## 👥 Authors <a name="authors"></a>
 
@@ -107,12 +107,7 @@ If you like this project, please give me a star.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank to Microverse as Organization for teaching me these new concepts and my two code reviewers so far:
-
-- Christian Biringanine @christianbiring1
-- Muneed Ul Rehman @muneebulrehman
-
-Without your feedback, this work couldn't be finished. Thank you, guys. 🙏
+I would like to give thanks to Microverse as Organization for teaching me these valuable topics about Figma and FlexBox CSS.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
