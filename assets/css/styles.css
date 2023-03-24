@@ -32,7 +32,6 @@ body {
   color: #6070ff;
 }
 
-
 .content {
   display: flex;
   flex-direction: column;
@@ -51,7 +50,6 @@ body {
 }
 
 .paragraph {
-  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
