@@ -90,8 +90,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border: 1px solid #DFE1E6;
   border-radius: 16px;
   padding: 16px;
+  gap: 12px
 }
 
 .screenshot {
