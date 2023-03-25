@@ -78,10 +78,6 @@ body {
   line-height: 1.5rem;
 }
 
-.social-media li:hover {
-  transform: scale(1.5);
-}
-
 .card-container {
   display: grid;
   grid-template-rows: auto auto auto auto;
@@ -162,6 +158,10 @@ body {
   line-height: 16px;
   padding: 4px 12px;
   border-radius: 8px;
+}
+
+.social-media li:hover {
+  transform: scale(1.5);
 }
 
 .card-bg-info ul li:nth-child(2) {
