@@ -238,17 +238,60 @@
             </div>
         </div>
     </section>
-
+    <section id="form-section">
+        <div id="contact-container">
+            <div>
+                <h2 class="white">Contact me</h2>
+                <p class="white">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
+            </div>
+            <form id="form" action="https://formspree.io/f/mknaqnpb" method="POST">
+                <ul>
+                    <li>
+                        <ul id="contactInGrid">
+                            <li>
+                                <div class="input-div">
+                                    <input 
+                                        type="text"
+                                        name="name"
+                                        maxlength="30"
+                                        required="true"
+                                        placeholder="Alexandra Loremipsum"
+                                    />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="input-div">
+                                    <input
+                                        id="mail"
+                                        type="email"
+                                        name="email"
+                                        required="true"
+                                        placeholder="alexandra@gmail.com"
+                                    />
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div id="maxText" class="input-div">
+                        <textarea
+                            name="message"
+                            required="true"
+                            id="message"
+                            maxlength="500"
+                            placeholder="Write your message here"
+                            rows="5"
+                        ></textarea>
+                        </div>
+                    </li>
+                    <li>
+                        <button type="submit" class="btn">
+                          Get in touch
+                        </button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </section>
 </body>
-<section>
-    <form action="">
-        <label for="name">
-            <input type="text" id="name" name="user-name" maxlength="30" required>
-        </label>
-        <label for="mail">
-            <input type="email" id="mail" name="user-email" maxlength="50" required>
-        </label>
-    </form>
-</section>
-
 </html>

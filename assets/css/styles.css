@@ -6,11 +6,6 @@
   font-family: 'Poppins', sans-serif;
 }
 
-body {
-  background-image: url("../images/background.png");
-  background-size: cover;
-}
-
 .topHeader {
   display: flex;
   align-items: center;
@@ -35,7 +30,10 @@ body {
 .content {
   display: flex;
   flex-direction: column;
+  height: 600px;
   padding: 0 6.2%;
+  background-image: url("../images/background.png");
+  background-size: cover;
 }
 
 .content h1 {
@@ -339,7 +337,7 @@ body {
   flex-direction: column;
   gap: 50px;
   padding: 90px 24px 45px 24px;
-  background-image: url(/assets/images/form-shapes.svg);
+  background-image: url(../images/form-shapes.svg);
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
@@ -378,15 +376,6 @@ body {
   border: none;
 }
 
-/*
-#form textarea {
-  width: 327px;
-  height: 170px;
-  border-radius: 8px;
-  border: none;
-}
-*/
-
 #form input {
   width: 95%;
   height: 48px;
@@ -399,7 +388,7 @@ body {
 }
 
 #form textarea {
-  width: 90%;
+  width: 91%;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   height: 150px;
@@ -423,213 +412,4 @@ body {
 
 #form .btn:active {
   background-color: #2230d2;
-}
-
-/* Media Queries */
-@media (max-width: 400px) {
-  .cards {
-    padding: 16px;
-  }
-}
-
-@media (max-width: 767px) {
-  .nav-links {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) {
-  header {
-    padding: 1.5% 9%;
-  }
-
-  header .fa-bars {
-    display: none;
-  }
-
-  header #logo {
-    display: flex;
-    align-items: center;
-  }
-
-  header nav ul {
-    list-style-type: none;
-    display: flex;
-  }
-
-  header nav ul li {
-    padding: 10px 12px;
-  }
-
-  header nav a {
-    text-decoration: none;
-    font-size: 15px;
-    color: #344563;
-    font-weight: 500;
-    line-height: 20px;
-    cursor: pointer;
-  }
-
-  .main-content {
-    background-image: url(./asset/header-bg-desktop.svg);
-    background-repeat: no-repeat;
-    background-size: 97%;
-    background-position: 100% 10%;
-    justify-content: center;
-  }
-
-  .main-content-container {
-    width: 70%;
-  }
-
-  /* Card Section */
-
-  .card-container {
-    padding: 9%;
-  }
-
-  .cards {
-    flex-direction: row;
-    gap: 10px;
-  }
-
-  .cards > div {
-    width: 50%;
-  }
-
-  .cards .screenshot {
-    object-fit: cover;
-    height: 100%;
-  }
-
-  .card-description {
-    padding: 1% 2%;
-  }
-
-  .card-1 {
-    order: 4;
-  }
-
-  .card-2 {
-    order: 3;
-  }
-
-  .card-3 {
-    order: 1;
-  }
-
-  .card-4 {
-    order: 2;
-  }
-
-  .card-2,
-  .card-4 {
-    flex-direction: row-reverse;
-  }
-
-  /* About Section */
-  .about-container {
-    grid-template-columns: 45% 55%;
-    padding: 9%;
-    column-gap: 15px;
-  }
-
-  .skill-container {
-    padding-top: 0;
-  }
-
-  .skill-item:nth-child(1) {
-    padding: 8px 12px 24px 12px;
-  }
-
-  .skill-item:nth-child(2),
-  .skill-item:nth-child(3) {
-    padding: 24px 12px;
-  }
-
-  .language-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .language-list {
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
-    list-style-type: none;
-    margin-left: 12px;
-  }
-
-  .language-list li div {
-    width: 115px;
-    height: 100px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: #f7f7f9;
-    padding-top: 12px;
-    padding-left: 12px;
-  }
-
-  .language-item img {
-    width: 48px;
-  }
-
-  /* Contact Form */
-
-  #contact-container {
-    padding: 12% 30%;
-    background-image: url(/assets/images/contact-form-bg-desktop.svg);
-    background-size: 94%;
-    background-position: 60% 30%;
-  }
-
-  #btn-container {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-/* laptop L 1440px */
-
-@media (min-width: 1440px) {
-  /* Main section */
-
-  .main-content h1 {
-    font-size: 48px;
-  }
-
-  .main-content p {
-    font-size: 20px;
-  }
-
-  #social-heading {
-    margin-top: 20px;
-  }
-
-  /* About */
-  .about p {
-    font-size: 18px;
-  }
-
-  /* Card */
-  .card-title {
-    font-size: 40px;
-    margin-bottom: 20px;
-  }
-
-  .card-bg-info p,
-  .card-bg-info li {
-    font-size: 18px;
-  }
-
-  .card-text {
-    font-size: 18px;
-    margin: 24px 0 24px 0;
-  }
-
-  .card-skills ul li {
-    font-size: 15px;
-  }
 }
