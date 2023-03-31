@@ -160,7 +160,7 @@
   padding: 4px 12px;
   border-radius: 8px;
 }
-
+/* Add documentation for icons style */
 .social-media li:hover {
   transform: scale(1.5);
 }
