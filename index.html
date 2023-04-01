@@ -18,14 +18,27 @@
                 </a>
             </div>
             <nav>
-                <a href="#" rel="noopener" target="_blank">
-                    <img src="/assets/images/breadcrumb.png" alt="">
-                </a>
+                <ul class="links-index">
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+                <div id="breadcrumb">
+                    <a href="#" rel="noopener" target="_blank">
+                        <img src="./assets/images/breadcrumb.png" alt="">
+                    </a>
+                </div>
             </nav>
         </div>
     </header>
     <section class="content">
-        <h1>I’m Alexandra. <br />Glad to see you!</h1>
+        <h1>I’m Javier. <br />Glad to see you!</h1>
         <div class="paragraph">I’m a software developer! I can help you build a product , feature or website Look
             through some of my work and experience! If you like what you see and have a project you need coded, dont
             hesitate to contact me.</div>
@@ -49,23 +62,38 @@
                 </div>
                 <div class="card-description">
                     <div>
-                        <h3 class="card-title">Tonic</h3>
+                        <h3 class="card-title mobile">Tonic</h3>
+                        <h3 class="card-title desktop">Facebook 360</h3>
                         <div class="card-bg-info">
-                            <p>Canopy</p>
+                            <p class="mobile">Canopy</p>
+                            <p class="desktop">FACEBOOK</p>
                             <ul>
-                                <li>Back End Dev</li>
+                                <li>Full Stack Dev</li>
                                 <li>2015</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="card-text">
+                    <div class="card-text mobile">
                         <p>
                             A daily selection of privately personalized reads; no accounts or sign-ups required.
                         </p>
                     </div>
-                    <div class="card-skills">
+                    <div class="card-text desktop">
+                        <p>
+                            Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.
+                        </p>
+                    </div>
+                    <div class="card-skills mobile">
                         <ul>
                             <li>html</li>
+                            <li>css</li>
+                            <li>javascript</li>
+                        </ul>
+                    </div>
+                    <div class="card-skills desktop">
+                        <ul>
+                            <li>html</li>
+                            <li>Ruby on rails</li>
                             <li>css</li>
                             <li>javascript</li>
                         </ul>
@@ -81,11 +109,13 @@
                 </div>
                 <div class="card-description">
                     <div>
-                        <h3 class="card-title">Multi-Post Stories</h3>
+                        <h3 class="card-title mobile">Multi-Post Stories</h3>
+                        <h3 class="card-title desktop">Uber Navigation</h3>
                         <div class="card-bg-info">
-                            <p>Canopy</p>
+                            <p class="mobile">Canopy</p>
+                            <p class="desktop">Uber</p>
                             <ul>
-                                <li>Back End Dev</li>
+                                <li>Lead Developer</li>
                                 <li>2015</li>
                             </ul>
                         </div>
@@ -95,9 +125,17 @@
                             A daily selection of privately personalized reads; no accounts or sign-ups required.
                         </p>
                     </div>
-                    <div class="card-skills">
+                    <div class="card-skills mobile">
                         <ul>
                             <li>html</li>
+                            <li>css</li>
+                            <li>javascript</li>
+                        </ul>
+                    </div>
+                    <div class="card-skills desktop">
+                        <ul>
+                            <li>html</li>
+                            <li>Ruby on rails</li>
                             <li>css</li>
                             <li>javascript</li>
                         </ul>
@@ -108,14 +146,18 @@
                 </div>
             </div>
             <div class="cards card-3">
-                <div>
+                <div class="mobile">
                     <img src="./assets/images/image3.svg" alt="screenshot" class="screenshot">
+                </div>
+                <div class="desktop">
+                    <img src="./assets/images/image5.svg" alt="screenshot" class="screenshot">
                 </div>
                 <div class="card-description">
                     <div>
-                        <h3 class="card-title">Tonic</h3>
+                        <h3 class="card-title">Multi-Post Stories</h3>
                         <div class="card-bg-info">
-                            <p>Canopy</p>
+                            <p class="mobile">Canopy</p>
+                            <p class="desktop">FACEBOOK</p>
                             <ul>
                                 <li>Back End Dev</li>
                                 <li>2015</li>
@@ -160,12 +202,22 @@
                         </p>
                     </div>
                     <div class="card-skills">
-                        <ul>
-                            <li>html</li>
-                            <li>css</li>
-                            <li>javascript</li>
-                        </ul>
-                    </div>
+                        <div class="card-skills mobile">
+                            <ul>
+                                <li>html</li>
+                                <li>css</li>
+                                <li>javascript</li>
+                            </ul>
+                        </div>
+                        <div class="card-skills desktop">
+                            <ul>
+                                <li>html</li>
+                                <li>Ruby on rails</li>
+                                <li>css</li>
+                                <li>javascript</li>
+                            </ul>
+                        </div>
+                        </div>
                     <div>
                         <button type="button" class="btn">See Project</button>
                     </div>
@@ -209,30 +261,41 @@
                     <button type="button" class="btn">Get my resume</button>
                 </div>
             </div>
-            <div>
-                <ul class="format-ul">
+            <div class="skill-list">
+                <ul>
+                    <li class="skill-item">
+                        <p>Languages</p>
+                        <img src="./assets/images/arrow-down.png" alt="arrow icon">
+                    </li>
                     <li>
-                        <div id="prog-languages" class="list-languages">
-                            <h2>Languages</h2>
-                            <img src="./assets/images/arrow-down.png" alt="down-arrow">
-                        </div>
-                        <ul id="id-list-languages">
-                            <li><img src="./assets/images/logo-js.png" alt="javascript"><span>JavaScript</span></li>
-                            <li><img src="./assets/images/logo-html.png" alt="html"><span>HTML</span></li>
-                            <li><img src="./assets/images/logo-css.png" alt="css"><span>CSS</span></li>
+                        <ul id="language-list">
+                            <li class="language-item">
+                                <div>
+                                    <img src="./assets/images/logo-js.png" alt="js icon">
+                                    <p>Javascript</p>
+                                </div>
+                            </li>
+                            <li class="language-item">
+                                <div>
+                                    <img src="./assets/images/logo-html.png" alt="html icon">
+                                    <p>HTML</p>
+                                </div>
+                            </li>
+                            <li class="language-item">
+                                <div>
+                                    <img src="./assets/images/logo-css.png" alt="css icon">
+                                    <p>CSS</p>
+                                </div>
+                            </li>
                         </ul>
                     </li>
-                    <li>
-                        <div class="list-languages separator">
-                            <h2>Frameworks</h2>
-                            <img src="./assets/images/arrow-right.png" alt="right-arrow">
-                        </div>
+                    <li class="skill-item bottom-bar">
+                        <p>Frameworks</p>
+                        <img src="./assets/images/right-arrow.png" alt="arrow icon">
                     </li>
-                    <li>
-                        <div class="list-languages separator">
-                            <h2>Skills</h2>
-                            <img src="./assets/images/arrow-right.png" alt="right-arrow">
-                        </div>
+                    <li class="skill-item bottom-bar">
+                        <p>Skills</p>
+                        <img src="./assets/images/right-arrow.png" alt="arrow icon">
                     </li>
                 </ul>
             </div>
@@ -284,7 +347,7 @@
                         ></textarea>
                         </div>
                     </li>
-                    <li>
+                    <li id="button-container">
                         <button type="submit" class="btn">
                           Get in touch
                         </button>
