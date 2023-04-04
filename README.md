@@ -13,6 +13,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+- [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -47,6 +48,12 @@ We developed this exercise to learn some skills using HTML & CSS (FlexBox).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [LINK to Demo](https://jlcarrascof.github.io/Project-portfolio/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## 💻 Getting Started <a name="getting-started"></a>
 
 This job was suggested only for educative purposes.
@@ -55,8 +62,10 @@ This job was suggested only for educative purposes.
 
 Clone this repository to your desired folder:
 
+  ```sh
   cd my-folder
-  git clone git@github.com:jlcarrascof/Project-portfolio.git
+  git clone https://github.com/jlcarrascof/Project-portfolio.git
+```
 
 ### Prerequisites
 
