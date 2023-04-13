@@ -6,6 +6,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
+/*
 .topHeader {
   display: flex;
   align-items: center;
@@ -13,7 +14,9 @@
   padding: 3% 6.3% 0 6.2%;
   box-sizing: border-box;
 }
+*/
 
+/*
 .logo {
   font-style: normal;
   font-weight: 700;
@@ -26,6 +29,251 @@
   text-decoration: none;
   color: #6070ff;
 }
+*/
+
+/* previo desktop 
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 6rem;
+} 
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-item {
+  margin: 0px 15px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1.15rem;
+  color:#344563;
+  font-weight: 500;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+*/
+
+/*
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+
+}
+
+.nav-item {
+  display: block;
+}
+
+.mobile-menu-icon {
+  display: block;
+}
+
+.mobile-menu-icon button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+  display: flex; 
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.mobile-menu .nav-item {
+  display: block;
+  padding-top: 1.2rem;
+}
+
+.open {
+  display: block;
+}
+
+#style-x {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;  
+}
+*/
+
+@media screen and (max-width: 767px) {
+  header {
+    display: flex;
+    width: 100%;
+    height: 44px;
+  }
+
+  header nav {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #fff;
+  }
+
+  .logo {
+    width: 50%;
+    height: 100%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 2px;
+  }
+
+  .logo a {
+    margin-left: 24px;
+    background-color: #fff;
+    color: #5464f8;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  header nav {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #fff;
+  }
+
+  .logo {
+    width: 50%;
+    height: 100%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 0 0 0 155px;
+    text-decoration: none;
+  }
+
+  .logo a {
+    margin-left: 24px;
+    background-color: #fff;
+    color: #5464f8;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-menu {
+    display: none;
+  }
+
+  .header-menu.open {
+    width: 400%;
+    height: 670px;
+    margin: 0 0 42px -53%;
+    background-color: #031cfbb0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    backdrop-filter: blur(5px);
+    z-index: 9;
+  }
+
+  .header-menu a {
+    color: #fff;
+    flex-basis: 10px;
+    margin-top: 74px;
+    margin-left: 34px;
+    text-decoration: none;
+    font-size: 31px;
+    position: sticky;
+    left: 7%;
+    line-height: 13px;
+  }
+
+  .hamburger {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .hamburger img {
+    margin-right: 12px;
+  }
+
+  .hamburger.display {
+    display: none;
+  }
+
+  .close {
+    color: white;
+    position: absolute;
+    right: 29px;
+    top: 10px;
+    font-size: 21px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .header-menu {
+    display: flex;
+    width: 35%;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 155px;
+  }
+
+  .header-menu a {
+    text-decoration: none;
+    color: #344563;
+    margin: 0 3px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .close {
+    display: none;
+  }
+}
+
+/* Content Main Page */ 
 
 .content {
   display: flex;
@@ -450,6 +698,8 @@
 
 /* Media queries section */
 
+/* Suggestion */
+
 @media (max-width: 767px) {
   .links-index {
     display: none;
@@ -457,6 +707,7 @@
 }
 
 @media (min-width: 768px) {
+  /*
   header nav ul {
     list-style-type: none;
     display: flex;
@@ -478,6 +729,7 @@
   #breadcrumb {
     display: none;
   }
+  */
 
   /* Card Section */
 
