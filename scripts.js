@@ -12,6 +12,6 @@ myClose.onclick = () => {
   myOpen.classList.remove('display');
 };
 myLinks.onclick = () => {
-  nav.classList.remove('open');
+  this.parentElement.classList.remove('open');
   myOpen.classList.remove('display');
 };
