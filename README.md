@@ -92,6 +92,12 @@ Open it using VS CODE with Live Server extension.
 - Twitter: [@EJbayen](https://twitter.com/EJbayen)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/enmanuel-bayen-torres-480906128/)
 
+👤 **Jorge Camargo**
+
+- GitHub: [@jicamargo](https://github.com/jicamargo)
+- Twitter: [@jicamargo](https://twitter.com/jicamargo)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/jorgecamargog/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
