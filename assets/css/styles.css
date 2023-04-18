@@ -52,11 +52,16 @@ a {
   padding: 0 24px;
 }
 
+.nav-bar .bar {
+  background-color: #5464f8;
+}
+
 .nav-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 60px;
+  margin-right: 50px;
 }
 
 .nav-branding {
@@ -64,6 +69,7 @@ a {
   font-weight: 700;
   font-size: 18px;
   color: #5464f8;
+  margin-left: 50px;
 }
 
 .nav-link {
@@ -94,33 +100,43 @@ a {
     display: block;
   }
 
+  .bar {
+    background-color: white;
+  }
+
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
+    background-color: white;
   }
 
   .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
+    background-color: white;
   }
 
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+    background-color: white;
   }
 
+  .nav-bar.active {
+    background-color: #5464f8;
+  }
+  
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 0;
+    top: 60px;
     gap: 0;
     flex-direction: column;
     width: 100%;
-    height: 90%;
+    height: 80%;
     text-align: left;
     transition: 0.3s;
     background-color: #5464f8;
-    backdrop-filter: blur(5px);
     align-items: flex-start;
     justify-content: flex-start;
-    color: white;
+    font-weight: bold;
   }
 
   .nav-item {
@@ -133,167 +149,12 @@ a {
   .nav-menu.active {
     left: 0;
   }
-}
 
-/*
-@media screen and (max-width: 767px) {
-  header {
-    display: flex;
-    width: 100%;
-    height: 44px;
-  }
-
-  header nav {
-    width: 100%;
-    height: 48px;
-    display: flex;
-    justify-content: flex-end;
-    background-color: #fff;
-  }
-
-  .logo {
-    width: 50%;
-    height: 100%;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    background-color: #fff;
-    padding: 2px;
-  }
-
-  .logo a {
-    margin-left: 24px;
-    background-color: #fff;
-    color: #5464f8;
-    text-decoration: none;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  header {
-    display: flex;
-    width: 100%;
-    height: 120px;
-    background-color: #fff;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  header nav {
-    width: 100%;
-    height: 48px;
-    display: flex;
-    justify-content: flex-end;
-    background-color: #fff;
-  }
-
-  .logo {
-    width: 50%;
-    height: 100%;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    background-color: #fff;
-    padding: 0 0 0 155px;
-    text-decoration: none;
-  }
-
-  .logo a {
-    margin-left: 24px;
-    background-color: #fff;
-    color: #5464f8;
-    text-decoration: none;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .main-menu {
-    display: none;
-  }
-
-  .main-menu.open {
-    width: 400%;
-    height: 670px;
-    margin: 0 0 42px -53%;
-    background-color: #031cfbb0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: fixed;
-    backdrop-filter: blur(5px);
-    z-index: 9;
-  }
-
-  .main-menu a {
-    color: #fff;
-    flex-basis: 10px;
-    margin-top: 74px;
-    margin-left: 34px;
-    text-decoration: none;
-    font-size: 31px;
-    position: sticky;
-    left: 7%;
-    line-height: 13px;
-  }
-
-  .hamburger {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .hamburger img {
-    padding: 1rem;
-    height: 1rem;
-    margin-right: 12px;
-  }
-
-  .hamburger.display {
-    display: none;
-  }
-
-  .close {
+  .nav-link {
     color: white;
-    position: absolute;
-    right: 29px;
-    top: 10px;
-    font-size: 21px;
   }
+
 }
-
-@media screen and (min-width: 768px) {
-  .hamburger {
-    display: none;
-  }
-
-  .main-menu {
-    display: flex;
-    width: 35%;
-    justify-content: space-around;
-    align-items: center;
-    padding-right: 155px;
-  }
-
-  .main-menu a {
-    text-decoration: none;
-    color: #344563;
-    margin: 0 3px;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-  }
-
-  .close {
-    display: none;
-  }
-}
-*/
 
 /* Content Main Page */
 
