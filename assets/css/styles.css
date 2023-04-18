@@ -4,12 +4,138 @@
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+header {
+  background-color: white; 
+}
+
+.logo {
+  width: 50%;
+  height: 100%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  padding: 2px;
+}
+
+.logo a {
+  margin-left: 24px;
+  background-color: #fff;
+  color: #5464f8;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #344563;
+  text-decoration: none;
+}
+
+.nav-bar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-branding {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #5464f8;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+}
+
+.nav-link:hover {
+  color:#5464f8;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #5464f8;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    height: 90%;
+    text-align: left;
+    transition: 0.3s;
+    background-color: #5464f8;
+    backdrop-filter: blur(5px);
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: white;
+  }
+
+  .nav-item {
+    margin: 5rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+}
+
+/*
 @media screen and (max-width: 767px) {
   header {
     display: flex;
@@ -167,6 +293,7 @@ html {
     display: none;
   }
 }
+*/
 
 /* Content Main Page */
 

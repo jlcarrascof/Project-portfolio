@@ -1,3 +1,18 @@
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click",
+  () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}))
+
+/*
 const myOpen = document.querySelector('.hamburger');
 const nav = document.querySelector('.main-menu');
 const myClose = document.querySelector('.close');
@@ -15,7 +30,7 @@ myLinks.onclick = () => {
   nav.classList.remove('open');
   myOpen.classList.remove('display');
 };
-
+*/
 
 /*
 let burguer_menu = document.getElementById('burguer_menu');
