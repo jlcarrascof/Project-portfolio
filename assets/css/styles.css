@@ -120,30 +120,36 @@ li {
   }
 
   .nav-bar.active {
-    background-color: #5464f8;
+    background-color: #6070FF;
   }
 
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 60px;
+    top: 0;
     gap: 0;
     flex-direction: column;
     width: 100%;
-    height: 80%;
+    height: 100%;
     text-align: left;
     transition: 0.3s;
-    background-color: #5464f8;
+    background-color: #6070FF;
     align-items: flex-start;
     justify-content: flex-start;
-    font-weight: bold;
+    opacity: 90%;
+    z-index: 4;    
+  }
+
+  .nav-menu > * {
+    margin-top: 5rem; 
+    margin-left: 2rem;
   }
 
   .nav-item {
-    margin: 5rem;
     font-style: normal;
-    font-weight: 700;
-    font-size: 1.5rem;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1rem;
   }
 
   .nav-menu.active {
