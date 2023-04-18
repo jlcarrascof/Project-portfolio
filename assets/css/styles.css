@@ -12,7 +12,7 @@ html {
 }
 
 header {
-  background-color: white; 
+  background-color: white;
 }
 
 .logo {
@@ -28,6 +28,11 @@ header {
   padding: 2px;
 }
 
+a {
+  color: #344563;
+  text-decoration: none;
+}
+
 .logo a {
   margin-left: 24px;
   background-color: #fff;
@@ -39,17 +44,22 @@ li {
   list-style: none;
 }
 
-a {
-  color: #344563;
-  text-decoration: none;
-}
-
 .nav-bar {
   min-height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #5464f8;
 }
 
 .nav-bar .bar {
@@ -77,22 +87,12 @@ a {
 }
 
 .nav-link:hover {
-  color:#5464f8;
+  color: #5464f8;
 }
 
 .hamburger {
   display: none;
   cursor: pointer;
-}
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: #5464f8;
 }
 
 @media (max-width: 768px) {
@@ -122,7 +122,7 @@ a {
   .nav-bar.active {
     background-color: #5464f8;
   }
-  
+
   .nav-menu {
     position: fixed;
     left: -100%;
@@ -153,7 +153,6 @@ a {
   .nav-link {
     color: white;
   }
-
 }
 
 /* Content Main Page */
