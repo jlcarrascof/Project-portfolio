@@ -137,9 +137,10 @@ li {
     color: white;
     align-items: flex-start;
     justify-content: flex-start;
-    opacity: 90%;
+    opacity: 107%;
     backdrop-filter: blur(10px);
     mix-blend-mode: multiply;
+    overflow-x: hidden;
   }
 
   .nav-menu > * {
