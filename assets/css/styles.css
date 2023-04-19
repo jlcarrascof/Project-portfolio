@@ -120,7 +120,7 @@ li {
   }
 
   .nav-bar.active {
-    background-color: #6070FF;
+    background-color: #6070ff;
   }
 
   .nav-menu {
@@ -133,7 +133,7 @@ li {
     height: 100%;
     text-align: left;
     transition: 0.3s;
-    background-color: #6070FF;
+    background-color: #6070ff;
     color: white;
     align-items: flex-start;
     justify-content: flex-start;
@@ -143,7 +143,7 @@ li {
   }
 
   .nav-menu > * {
-    margin-top: 5rem; 
+    margin-top: 5rem;
     margin-left: 2rem;
   }
 
