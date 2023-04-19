@@ -134,10 +134,12 @@ li {
     text-align: left;
     transition: 0.3s;
     background-color: #6070FF;
+    color: white;
     align-items: flex-start;
     justify-content: flex-start;
     opacity: 90%;
-    z-index: 4;    
+    backdrop-filter: blur(10px);
+    mix-blend-mode: multiply;
   }
 
   .nav-menu > * {
@@ -147,7 +149,7 @@ li {
 
   .nav-item {
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 2rem;
     line-height: 1rem;
   }
@@ -550,7 +552,7 @@ li {
 }
 
 #form textarea {
-  width: 91%;
+  width: 95%;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   height: 150px;
