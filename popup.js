@@ -67,9 +67,9 @@
   ];
   
   const gridWorks = document.getElementById('grid_works');
-  let popupContainer = null;
+  let winPopup = null;
   let div = null;
-  let bodyDom = null;
+  let loadBody = null;
   let card = null;
   
   for (let i = 0; i < arrCardsInfo.length; i += 1) {
@@ -120,7 +120,7 @@
                         </ul>
                     </div>
                     <div>
-                        <button id="btn-${card.id}" type="button" class="btn">See Project</button>
+                        <button id="btn-${card.id}" type="button" class="btn btnCard">See Project</button>
                     </div>
                 </div>
             </div>
@@ -128,6 +128,105 @@
 
     gridWorks.appendChild(div);
   }
-  
-// create popup window
 
+// functions realted with popup window
+  
+  function closeWinPopup() {
+    loadBody.removeChild(winPopup);
+  
+    /* re-activate the scrollbar for the body */
+    loadBody.style.overflow = 'auto'; 
+  }
+  
+
+// create popup window
+  
+function openPopup(card) {
+  loadBody = document.getElementById('loadBody');
+
+  /* Hide scrollbar for the body */
+  loadBody.style.overflow = 'hidden'; 
+
+  loadBody.appendChild(document.createElement('div')).setAttribute('id', 'winPopup');
+  winPopup = document.getElementById('winPopup');
+  winPopup.classList = "winPopup";
+  console.log("entre a crear popup");
+
+  /* *********************************** */
+  div = document.createElement('div');
+
+  div.classList = 'InfoPopup';
+  div.id = card.id;
+  div.innerHTML = `
+                  <div class="card-description-popup">
+                    <h3 class="card-title mobile">${card.name}</h3>
+                    <a id="btnClosePopup" class="btnClosePopup">
+                        <img class="btn-close-icon" src="./assets/images/close.png" alt="Close menu icon.">
+                    </a> 
+                  </div>
+                  <div class="bodyPopup">
+                    <div class="card-bg-info">
+                      <h3 class="card-title desktop">${card.name}</h3>
+                      <div>
+                        <img src="${card.cardImage}" alt="${card.alternateTextImage}" class="screenshot-popup">
+                      </div>
+                      <p class="mobile">${card.name2}</p>
+                      <p class="desktop">${card.name2}</p>
+                      <ul>
+                          <li>Full Stack Dev</li>
+                          <li>2015</li>
+                      </ul>
+                    </div>
+                    <div class="card-text mobile">
+                        <p>
+                            A daily selection of privately personalized reads; no accounts or sign-ups required.
+                        </p>
+                    </div>
+                    <div class="card-text desktop">
+                        <p>
+                            Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.
+                        </p>
+                    </div>
+                    <div class="card-skills mobile">
+                        <ul>
+                        ${card.technologies.map((tech) => `
+                        <li class="li_btn_2">${tech}</li>`).join(' ')
+                        }
+                        </ul>
+                    </div>
+                    <div class="card-skills desktop">
+                        <ul>
+                          ${card.technologies.map((tech) => `
+                          <li class="li_btn_2">${tech}</li>`).join(' ')
+                          }
+                        </ul>
+                    </div>
+                    <div>
+                        <button id="btn-${card.id}" type="button" class="btn btnCard">See Project</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              `;
+  winPopup.appendChild(div).setAttribute('id', 'modal');
+
+  const btnClose = document.getElementById('btnClosePopup');
+  
+  btnClose.addEventListener('click', closeWinPopup);
+  
+}
+
+/* ********************************************** */
+
+function clickBtn(event) {
+  const btn = event.srcElement;
+  event.preventDefault();
+  const numCard = parseInt(btn.id.slice(-1), 10);
+  openPopup(arrCardsInfo[numCard]);
+}
+
+/* ***** add click event to button  */
+const btn = document.getElementsByClassName('btnCard');
+for (let i = 0; i < btn.length; i += 1) {
+  btn[i].addEventListener('click', clickBtn);
+}

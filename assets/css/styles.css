@@ -736,3 +736,48 @@ li {
     justify-content: center;
   }
 }
+
+/* styles for popup window  */
+.winPopup {
+  width : 100%;
+  height : 100%;
+  position: fixed;
+  z-Index : 99;
+  background : rgba(52, 41, 197, 0.4);
+  backdrop-filter: blur(4px);
+  top: 0;
+  left: 0;
+}
+
+.btnClosePopup {
+  z-index: 99;
+  width: 2rem;
+  height: 2rem;
+  margin: 1rem;
+  text-align: center;
+  cursor: pointer;
+  float: right;
+}
+
+.InfoPopup {
+  background-color: rgba(255, 255, 255, 0.838);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 4rem;
+  gap: 12px; 
+  /* overflow-y: scroll; */
+}
+
+.screenshot-popup {
+  object-fit: cover;
+  height: 50%;
+}
+
+.card-description-popup {
+  display: flex;
+  justify-content: space-between;
+}
