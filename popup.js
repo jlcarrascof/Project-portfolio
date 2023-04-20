@@ -6,20 +6,20 @@
     {
       id: 'card-0',
       name: 'Tonic',
-      name2: 'Facebook 360',
+      name2: 'Canopy',
       ShortDescrip: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
       LongDescrip: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
       cardImage: './assets/images/image1.svg',
       alternateTextImage: 'header-main-project image.',
-      technologies: ['CSS', 'HTML', 'Boostrap', 'Ruby'],
+      technologies: ['HTML', 'CSS', 'Javascript'],
       liveVersion: 'https://jlcarrascof.github.io/card-portfolio/',
       source: 'https://github.com/jlcarrascof/card-portfolio/'
     },
   
     {
       id: 'card-1',
-      name: 'Profesional Art 1',
-      name2: 'Printing Data',
+      name: 'Multi-Post Stories',
+      name2: 'Canopy',
       ShortDescrip: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
       LongDescrip: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
       cardImage: './assets/images/image2.svg',
@@ -85,9 +85,9 @@
                 <div class="card-description">
                     <div>
                         <h3 class="card-title mobile">${card.name}</h3>
-                        <h3 class="card-title desktop">${card.name2}</h3>
+                        <h3 class="card-title desktop">${card.name}</h3>
                         <div class="card-bg-info">
-                            <p class="mobile">${card.name}</p>
+                            <p class="mobile">${card.name2}</p>
                             <p class="desktop">${card.name2}</p>
                             <ul>
                                 <li>Full Stack Dev</li>
@@ -129,5 +129,5 @@
     gridWorks.appendChild(div);
   }
   
-// create de popup window
+// create popup window
 
