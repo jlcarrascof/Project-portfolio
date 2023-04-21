@@ -322,7 +322,7 @@ projectCardString.forEach((projectString, index) => {
   const projectElement = parser.parseFromString(projectString, 'text/html').body.firstChild;
 
   const mobilePopup = `
-    <div class="project-popup-hidden ">
+    <div class="project-popup-hidden">
       <div class="project-background"></div>
         <div class="project-popup">
 

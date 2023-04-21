@@ -337,6 +337,137 @@ li {
   background-color: #2230d2;
 }
 
+/* Cards Popup Section */
+
+.project-popup-hidden {
+  display: none !important;
+}
+
+.project-background {
+  background-color: #c1c7d0;
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(5px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+}
+
+.project-popup {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 5px solid #dfe1e6;
+  border-radius: 1em;
+  position: fixed;
+  top: 1em;
+  bottom: 1em;
+  right: 1em;
+  left: 1em;
+  padding: 1em;
+  z-index: 10000;
+}
+
+.project-header {
+  color: #172b4d;
+  line-height: 1.75em;
+  font-weight: 700;
+}
+
+.project-header > h2 {
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.project-header > p {
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.project-close {
+  font-size: 22px;
+  color: #868990;
+  float: right;
+  cursor: pointer;
+  padding: 10px 10px 0 0;
+}
+
+.project-img {
+  min-height: 100px;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 12px;
+}
+
+
+.project-footer,
+.project-footer > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-footer ul {
+  align-self: flex-start;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  display: flex;
+  list-style-type: none;
+  gap: 8px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  margin-bottom: 24px;
+}
+
+.project-footer li {
+  background-color: #ebebff;
+  color: #6070ff;
+  border-radius: 8px;
+  padding: 4px 12px;
+  font-weight: 500;
+}
+
+.project-desc {
+  margin-bottom: 24px;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.project-links {
+  display: flex;
+}
+
+.project-links a {
+  font-size: 15px;
+  padding: 12px;
+  background-color: white;
+  border-radius: 8px;
+  color: #6070ff;
+  font-weight: 500;
+  border: 1px solid #7f8cff;
+  margin-right: 10px;
+  width: 172px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 20px;
+}
+
+.project-links a i {
+  margin-left: 10px;
+}
+
 /* About Section */
 .about-container {
   display: grid;
@@ -742,49 +873,27 @@ li {
     display: flex;
     justify-content: center;
   }
-}
 
-/* styles for popup window  */
-.winPopup {
-  width : 100%;
-  height : 100%;
-  position: fixed;
-  z-Index : 99;
-  background : rgba(52, 41, 197, 0.4);
-  backdrop-filter: blur(4px);
-  top: 0;
-  left: 0;
-}
-
-.btnClosePopup {
-  z-index: 99;
-  width: 2rem;
-  height: 2rem;
-  margin: 1rem;
-  text-align: center;
-  cursor: pointer;
-  float: right;
-}
-
-.InfoPopup {
-  background-color: rgba(255, 255, 255, 0.838);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border: 1px solid #dfe1e6;
-  border-radius: 16px;
-  padding: 2rem;
-  margin: 4rem;
-  gap: 12px; 
-  /* overflow-y: scroll; */
-}
-
-.screenshot-popup {
-  object-fit: cover;
-  height: 50%;
-}
-
-.card-description-popup {
-  display: flex;
-  justify-content: space-between;
+  .project-links {
+    display: flex;
+  }
+  
+  .project-links a {
+    font-size: 15px;
+    padding: 12px;
+    background-color: white;
+    border-radius: 8px;
+    color: #6070ff;
+    font-weight: 500;
+    border: 1px solid #7f8cff;
+    margin-right: 10px;
+    width: 172px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 20px;
+  }
+  
+  .project-links a i {
+    margin-left: 10px;
+  }
 }
