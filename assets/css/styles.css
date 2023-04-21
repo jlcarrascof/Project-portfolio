@@ -166,6 +166,13 @@ li {
 
 /* Content Main Page */
 
+.recent-work {
+  width: 85vw;
+  margin: 0 auto;
+  display: grid;
+  row-gap: 100px;
+}
+
 .content {
   display: flex;
   flex-direction: column;

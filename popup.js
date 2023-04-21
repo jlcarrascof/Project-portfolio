@@ -292,25 +292,24 @@ const projectsData = [
 ];
 
 const projectCardString = projectsData.map((project) => `
-  <div class="card">
-    <div class="inner-card">
-      <div class="card-img card-1">
-        <img
-          src="${project.src}"
-          alt="Project Snapshoot"
-        />
-      </div>
-      <div class="desc">
-        <h3>${project.title}</h3>
-        <h4>${project.subtitle} <span>${project.techStack}</span> <span>${project.year}</span></h4>
-        <p>${project.highlight}</p>
-        <ul>
-          ${project.lang.map((tech) => `<li>${tech}</li>`).join('')}
-        </ul>
-        <button type="button" class="project-btn button">
-          See Project
-        </button>
-      </div>
+  <div class="cards card-1">
+    <div>
+      <img src="${project.src}" alt="screenshot" class="screenshot">
+    </div>
+    <div class="card-description">
+      <div>
+        <h3 class="card-title desktop">${project.title}</h3>
+        <div class="card-bg-info">
+            <p class="desktop">${project.subtitle}</p>
+            <h4>${project.subtitle} <span>${project.techStack}</span> <span>${project.year}</span></h4>
+            <p>${project.highlight}</p>
+            <ul>
+              ${project.lang.map((tech) => `<li>${tech}</li>`).join('')}
+            </ul>
+        </div>
+    </div>
+    <div>
+        <button type="button" class="btn">See Project</button>
     </div>
   </div>
 `);
