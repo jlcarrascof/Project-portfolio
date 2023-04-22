@@ -94,10 +94,9 @@ Open it using VS CODE with Live Server extension.
 
 👤 **Jorge Camargo**
 
-- GitHub: [@jicamargo](https://github.com/jicamargo)
-- Twitter: [@jicamargo](https://twitter.com/jicamargo)
+- GitHub: [@jicamargo](https://github.com/jicamargo )
+- Twitter: [@jicamargo](https://twitter.com/jicamargo )
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/jorgecamargog/)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
