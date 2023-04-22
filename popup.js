@@ -97,12 +97,12 @@
                     </div>
                     <div class="card-text mobile">
                         <p>
-                            A daily selection of privately personalized reads; no accounts or sign-ups required.
+                            A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required A daily selection of privately personalized reads; no accounts or sign-ups required
                         </p>
                     </div>
                     <div class="card-text desktop">
                         <p>
-                            Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.
+                            Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required A daily selection of privately personalized reads; no accounts or sign-ups required7
                         </p>
                     </div>
                     <div class="card-skills mobile">
@@ -138,6 +138,11 @@
     loadBody.style.overflow = 'auto'; 
   }
   
+  function openLink(url) {
+    window.open(url);
+    closeWinPopup();
+  }
+  
 
 // create popup window
   
@@ -160,49 +165,59 @@ function openPopup(card) {
   div.innerHTML = `
                   <div class="card-description-popup">
                     <h3 class="card-title mobile">${card.name}</h3>
+                    <h3 class="card-title desktop">${card.name}</h3>
                     <a id="btnClosePopup" class="btnClosePopup">
-                        <img class="btn-close-icon" src="./assets/images/close.png" alt="Close menu icon.">
+                        <img class="btn-close-icon" src="./assets/images/icon-close-popup.png" alt="Close menu icon.">
                     </a> 
                   </div>
                   <div class="bodyPopup">
-                    <div class="card-bg-info">
-                      <h3 class="card-title desktop">${card.name}</h3>
-                      <div>
-                        <img src="${card.cardImage}" alt="${card.alternateTextImage}" class="screenshot-popup">
+                    <div class="card-bg-info-popup">
+                      <div class="line1-popup">
+                        <h2 class="mobile">${card.name2}</h2>
+                        <h2 class="desktop">${card.name2}</h2>
+                        <ul class="ul-popup">
+                            <li>Full Stack Dev</li>
+                            <li>2015</li>
+                        </ul>
                       </div>
-                      <p class="mobile">${card.name2}</p>
-                      <p class="desktop">${card.name2}</p>
-                      <ul>
-                          <li>Full Stack Dev</li>
-                          <li>2015</li>
-                      </ul>
+                      <div class="screenshot-popup">
+                        <img class="screenshot-popup" src="${card.cardImage}" alt="${card.alternateTextImage}" >
+                      </div>
                     </div>
-                    <div class="card-text mobile">
-                        <p>
-                            A daily selection of privately personalized reads; no accounts or sign-ups required.
-                        </p>
-                    </div>
-                    <div class="card-text desktop">
-                        <p>
-                            Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.
-                        </p>
-                    </div>
-                    <div class="card-skills mobile">
-                        <ul>
-                        ${card.technologies.map((tech) => `
-                        <li class="li_btn_2">${tech}</li>`).join(' ')
-                        }
-                        </ul>
-                    </div>
-                    <div class="card-skills desktop">
-                        <ul>
-                          ${card.technologies.map((tech) => `
-                          <li class="li_btn_2">${tech}</li>`).join(' ')
-                          }
-                        </ul>
-                    </div>
-                    <div>
-                        <button id="btn-${card.id}" type="button" class="btn btnCard">See Project</button>
+                    <div class="lowsection">
+                      <div class="col1">
+                        <div class="card-text ">
+                            <p>
+                                exampple XXX A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required A daily selection of privately personalized reads; no accounts or sign-ups required
+                            </p>
+                        </div>
+                      </div>
+                      <div class="col2">
+                        <div class="card-skills mobile">
+                            <ul>
+                            ${card.technologies.map((tech) => `
+                            <li class="li_btn_2">${tech}</li>`).join(' ')
+                            }
+                            </ul>
+                        </div>
+                        <div class="card-skills desktop">
+                            <ul>
+                              ${card.technologies.map((tech) => `
+                              <li class="li_btn_2">${tech}</li>`).join(' ')
+                              }
+                            </ul>
+                        </div>
+                        <div class="btnlinks">
+                          <div>
+                              <button id="btnLive" type="button" class="btn btnCard">See Live <img class="icon-live-git" src="./assets/images/icon-export-blue.png">
+                              </button>
+                          </div>
+                          <div>
+                              <button id="btnGit" type="button" class="btn btnCard">See Source <img class="icon-live-git" src="./assets/images/icon-git-blue.png">
+                              </button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -211,9 +226,12 @@ function openPopup(card) {
   winPopup.appendChild(div).setAttribute('id', 'modal');
 
   const btnClose = document.getElementById('btnClosePopup');
-  
+  const btnLive = document.getElementById('btnLive');
+  const btnSrc = document.getElementById('btnGit');
+
   btnClose.addEventListener('click', closeWinPopup);
-  
+  btnLive.addEventListener('click', () => {openLink(card.liveVersion); });
+  btnSrc.addEventListener('click', () => {openLink(card.source); });
 }
 
 /* ********************************************** */
