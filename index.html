@@ -16,7 +16,7 @@
      
           <ul class="nav-menu">
             <li class="nav-item">
-                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#Portfolio" class="nav-link">Portfolio</a>
             </li>    
             <li class="nav-item">
                 <a href="#aboutMyself" class="nav-link">About</a>
@@ -49,10 +49,7 @@
             <li><a href="#" target="_blank"><img src="./assets/images/angel-list.svg" alt=""></a></li>
         </ul>
     </section>
-    <section id="portfolio">
-        
-        <!-- cards generated dinamically -->
-
+        <!--
         <div class="card-container">
             <div class="cards card-1">
                 <div>
@@ -222,8 +219,128 @@
                 </div>
             </div>
         </div>
-        <div class="recent-work" id="portfolio"></div>
-        <div class="project-popup-container"></div>
+        -->
+    <section class="works" id="Portfolio">
+        <div class="works__card f_cr">
+            <div class="img-container f_cr">
+                <img src="./assets/images/image5.svg" alt="project one" />
+            </div>
+            <div class="works__card--text">
+                <h2>Tonic</h2>
+                <ul class="works__card--info f_cr">
+                    <li class="f_cr"><span>CANOPY</span></li>
+                    <li class="f_cr">
+                        <img src="./assets/images/Counter.svg" alt="counter" />
+                        <p>Back End Dev</p>
+                    </li>
+                    <li class="f_cr">
+                        <img src="./assets/images/Counter.svg" alt="counter" />
+                        <p>2015</p>
+                    </li>
+                </ul>
+                <p>
+                    A daily selection of privately personalized reads; no accounts or
+                    sign-ups required.
+                </p>
+                <ul class="works__card--tags f_cr">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+                <button type="button" class="button">See project</button>
+            </div>
+        </div>
+        <div class="works__card f_cr">
+            <div class="img-container f_cr">
+                <img src="./assets/images/image2.svg" alt="project two" />
+            </div>
+            <div class="works__card--text">
+                <h2>Uber Navigation</h2>
+                <ul class="works__card--info f_cr">
+                    <li class="f_cr"><span>Uber</span></li>
+                    <li class="f_cr">
+                        <img src="./assets/images/Counter.svg" alt="counter" />
+                        <p>Lead Developer</p>
+                    </li>
+                    <li class="f_cr">
+                        <img src="./assets/images/Counter.svg" alt="counter" />
+                        <p>2018</p>
+                    </li>
+                </ul>
+                <p>
+                    A smart assistant to make driving more safe, efficient, and fun by
+                    unlocking your most expensive computer: your car.
+                </p>
+                <ul class="works__card--tags f_cr">
+                    <li>HTML</li>
+                    <li>Ruby on Rails</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+                <button type="button" class="button">See project</button>
+            </div>
+        </div>
+        <div class="works__card f_cr">
+            <div class="img-container f_cr">
+                <img src="./assets/images/image1.svg" alt="project three" />
+            </div>
+            <div class="works__card--text">
+                <h2>Facebook 360</h2>
+                <ul class="works__card--info f_cr">
+                    <li class="f_cr"><span>FACEBOOK</span></li>
+                    <li class="f_cr">
+                        <img src="./assets/images/Counter.svg" alt="counter" />
+                        <p>Back End Dev</p>
+                    </li>
+                    <li class="f_cr">
+                        <img src="./assets/images/Counter.svg" alt="counter" />
+                        <p>2015</p>
+                    </li>
+                </ul>
+                <p>
+                    Exploring the future of media in Facebook's first Virtual Reality
+                    app; a place to discover and enjoy 360 photos and videos on Gear VR.
+                </p>
+                <ul class="works__card--tags f_cr">
+                    <li>HTML</li>
+                    <li>Ruby on Rails</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+                <button type="button" class="button">See project</button>
+            </div>
+        </div>
+        <div class="works__card f_cr">
+            <div class="img-container f_cr">
+                <img src="./assets/images/image4.svg" alt="project four" />
+            </div>
+            <div class="works__card--text">
+                <h2>Multi-Post Stories</h2>
+                <ul class="works__card--info f_cr">
+                    <li class="f_cr"><span>FACEBOOK</span></li>
+                    <li class="f_cr">
+                        <img src="./assets/images/Counter.svg" alt="counter" />
+                        <p>Full Stack Dev</p>
+                    </li>
+                    <li class="f_cr">
+                        <img src="./assets/images/Counter.svg" alt="counter" />
+                        <p>2015</p>
+                    </li>
+                </ul>
+                <p>
+                    Experimental content creation feature that allows users to add to an
+                    existing story over the course of a day without spamming their
+                    friends.
+                </p>
+                <ul class="works__card--tags f_cr">
+                    <li>HTML</li>
+                    <li>Ruby on Rails</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+                <button type="button" class="button">See project</button>
+            </div>
+        </div>
     </section>
     <section id="aboutMyself">
         <div class="about-container">
@@ -355,6 +472,41 @@
                 </ul>
             </form>
         </div>
+    </section>
+    <section id="popupSection">
+        <div class="modal">
+			<div class="modal-content">
+				<div class="between">
+					<h2 class="modal-title"></h2>
+					<span class="close"><img src="./assets/images/xButton.svg" alt="close"></span>
+				</div>
+				<div class="modal-project-info"></div>
+				<div class="image-container">
+					<img class="modal-image" src="" alt="">
+				</div>
+				<div class="d-flex">
+					<p class="modal-description"></p>
+					<div class="second">
+						<div class="modal-badges f_cr"></div>
+						<div class="modal-buttons">
+							<a class="modal-button live-button" href="" target="_blank">See Live
+								<img src="./assets/images/liveButton.svg" alt="live">
+							</a>
+							<a class="modal-button source-button" href="" target="_blank">See Source
+								<img src="./assets/images/gitButton.svg" alt="github">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-nav">
+					<button class="modal-nav-button prev-button" onclick="fillModal(projects[index - 1], index - 1)"
+						disabled>
+						<-- Previous</button> <button class="modal-nav-button next-button"
+							onclick="fillModal(projects[index + 1], index + 1)" disabled>Next -->
+					</button>
+				</div>
+			</div>
+		</div>
     </section>
     <script src="scripts.js"></script>
     <script src="popup.js"></script>

@@ -1,136 +1,113 @@
-
 /* this module You use an array to store all of the information for all projects */
 /* each project has: name, ShortDescrip, featured image, technologies,
    link to live version, link to source */
 
-window.onload = () => {
-
-const projectsData = [
-  {
-    title: 'Tonic',
-    subtitle: 'CANOPY',
-    techStack: 'Back End Dev',
-    year: 2015,
-    src: './assets/images/image1.svg',
-    highlight: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    lang: ['html', 'css', 'javascript'],
-    live: 'https://jlcarrascof.github.io/card-portfolio/',
-    source: 'https://github.com/jlcarrascof/card-portfolio/',
-  },
-  {
-    title: 'Multi Post Stories',
-    subtitle: 'CANOPY',
-    techStack: 'Back End Dev',
-    year: 2015,
-    src: './assets/images/image2.svg',
-    highlight: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    lang: ['html', 'css', 'javascript'],
-    live: 'https://jlcarrascof.github.io/card-portfolio/',
-    source: 'https://github.com/jlcarrascof/card-portfolio/',
-  },
-  {
-    title: 'Tonic',
-    subtitle: 'CANOPY',
-    techStack: 'Back End Dev',
-    year: 2015,
-    src: './assets/images/image3.svg',
-    highlight: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    lang: ['html', 'css', 'javascript'],
-    live: 'https://jlcarrascof.github.io/card-portfolio/',
-    source: 'https://github.com/jlcarrascof/card-portfolio/',
-  },
-  {
-    title: 'Multi Post Stories',
-    subtitle: 'CANOPY',
-    techStack: 'Back End Dev',
-    year: 2015,
-    src: './assets/images/image4.svg',
-    highlight: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    lang: ['html', 'css', 'javascript'],
-    live: 'https://jlcarrascof.github.io/card-portfolio/',
-    source: 'https://github.com/jlcarrascof/card-portfolio/',
-  },
-];
-
-const projectCardString = projectsData.map((project) => `
-  <div class="cards card-1">
-    <div>
-      <img src="${project.src}" alt="screenshot" class="screenshot">
-    </div>
-    <div class="card-description">
-      <div>
-        <h3 class="card-title desktop">${project.title}</h3>
-        <div class="card-bg-info">
-            <p class="desktop">${project.subtitle}</p>
-            <h4>${project.subtitle} <span>${project.techStack}</span> <span>${project.year}</span></h4>
-            <p>${project.highlight}</p>
-            <ul>
-              ${project.lang.map((tech) => `<li>${tech}</li>`).join('')}
-            </ul>
-        </div>
-    </div>
-    <div>
-        <button type="button" class="btn">See Project</button>
-    </div>
-  </div>
-`);
-
-const popupContainer = document.querySelector('.project-popup-container');
-const recentWork = document.querySelector('.recent-work');
-const parser = new DOMParser();
-
-projectCardString.forEach((projectString, index) => {
-  const projectElement = parser.parseFromString(projectString, 'text/html').body.firstChild;
-
-  const mobilePopup = `
-    <div class="project-popup-hidden">
-      <div class="project-background"></div>
-        <div class="project-popup">
-
-          <div class="project-header">
-            <i class="fa-solid fa-xmark project-close"></i>
-            <h2>${projectsData[index].title}</h2>
-            <p>${projectsData[index].subtitle} <span>${projectsData[index].techStack}</span> <span>${projectsData[index].year}</span></p>
-          </div>
-
-          <div class="project-img" style="background-image: url(${projectsData[index].src})">
-          </div>
-
-          <div class="project-footer">
-            <p class="project-desc">${projectsData[index].description}</p>
-            <div>
-              <ul>
-                ${projectsData[index].lang.map((tech) => `<li>${tech}</li>`).join('')}
-              </ul>
-              <span></span>
-              <div class="project-links">
-                <a href="${projectsData[index].live}">See Live <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                <a href="${projectsData[index].source}">See Source <i class="fa-brands fa-github"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
+   const projects = [
+    {
+      title: 'Tonic',
+      info: ['CANOPY', 'Back End Dev', '2015'],
+      image: 'assets/img/Project5.svg',
+      badges: ['html', 'css', 'javaScript'],
+      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,  essent",
+      liveButton: 'https://sergioperalta22.github.io/Portfolio/',
+      sourseButton: 'https://github.com/SergioPeralta22/Portfolio',
+    },
+    {
+      title: 'Uber Navigation',
+      info: ['Uber', 'Lead Developer', '2018'],
+      image: 'assets/img/Project2.svg',
+      badges: ['html', 'Ruby on Rails', 'css', 'javaScript'],
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore laborum iure animi, molestiae at ab. Et quas, eaque, fuga pariatur neque labore dolore, quisquam ab soluta asperiores facilis non reprehenderit nisi ratione dolore. Corporis autem repellendus eaque',
+      liveButton: 'https://sergioperalta22.github.io/Portfolio/',
+      sourseButton: 'https://github.com/SergioPeralta22/Portfolio',
+    },
+    {
+      title: 'Facebook 360',
+      info: ['FACEBOOK', 'Back End Dev', '2015'],
+      image: 'assets/img/Project1.svg',
+      badges: ['html', 'Ruby on Rails', 'css', 'javaScript'],
+      description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat voluptatum tempore aliquid nisi. Repellendus neque alias odit? Ipsa minus eligendi in perferendis? Ratione commodi, deserunt dicta architecto vitae animi ab quibusdam blanditiis!  . Eos suscipit quaerat.',
+      liveButton: 'https://sergioperalta22.github.io/Portfolio/',
+      sourseButton: 'https://github.com/SergioPeralta22/Portfolio',
+    },
+    {
+      title: 'Multi-Post Stories',
+      info: ['FACEBOOK', 'Full Stack Dev', '2015'],
+      image: 'assets/img/Project4.svg',
+      badges: ['html', 'Ruby on Rails', 'css', 'javaScript'],
+      description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ea in, tenetur officia quam nobis et natus dolor adipisci nulla laudantium magni, laboriosam ducimus, quo vitae  alias nemo officia tenetur inventore minus, aspernatur dolorem t error',
+      liveButton: 'https://sergioperalta22.github.io/Portfolio/',
+      sourseButton: 'https://github.com/SergioPeralta22/Portfolio',
+    },
+  ];
+  
+  let index;
+  
+  function fillModal(project, i) {
+    index = i;
+  
+    // modal fill logic
+  
+    const modal = document.querySelector('.modal');
+    const modalImage = modal.querySelector('.modal-image');
+    const modalTitle = modal.querySelector('.modal-title');
+    const modalProjectInfo = modal.querySelector('.modal-project-info');
+    const modalBadges = modal.querySelector('.modal-badges');
+    const modalDescription = modal.querySelector('.modal-description');
+    const modalLiveButton = modal.querySelector('.live-button');
+    const modalSourceButton = modal.querySelector('.source-button');
+  
+    modalImage.src = project.image;
+    modalTitle.textContent = project.title;
+    modalProjectInfo.innerHTML = `
+  <ul class="works__card--info f_cr">
+  <li class="f_cr"><span>${project.info[0]}</span></li>
+  <li class="f_cr">
+  <img src="assets/img/Counter.svg" alt="counter" />
+  <p>${project.info[1]}</p>
+  </li>
+  <li class="f_cr">
+  <img src="assets/img/Counter.svg" alt="counter" />
+  <p>${project.info[2]}</p>
+  </li>
+  </ul>
   `;
-
-  const mobilePopupElement = parser.parseFromString(mobilePopup, 'text/html').body.firstChild;
-
-  const projectBtn = projectElement.querySelector('.project-btn');
-  const closeBtn = mobilePopupElement.querySelector('.project-close');
-
-  projectBtn.addEventListener('click', () => {
-    mobilePopupElement.classList.toggle('project-popup-hidden');
+  
+    modalBadges.innerHTML = project.badges
+      .map((badge) => `<span class="badge">${badge}</span>`)
+      .join('');
+  
+    modalDescription.textContent = project.description;
+    modalLiveButton.href = project.liveButton;
+    modalSourceButton.href = project.sourseButton;
+  
+    modal.style.display = 'flex';
+  
+    const closeButton = modal.querySelector('.close');
+    closeButton.addEventListener('click', () => {
+      modal.style.display = 'none';
+    });
+  
+    // Navigation buttons logic
+  
+    const prevButton = modal.querySelector('.prev-button');
+    const nextButton = modal.querySelector('.next-button');
+    if (index === 0) {
+      prevButton.disabled = true;
+    } else {
+      prevButton.disabled = false;
+    }
+    if (index === projects.length - 1) {
+      nextButton.disabled = true;
+    } else {
+      nextButton.disabled = false;
+    }
+  }
+  
+  const buttons = document.querySelectorAll('.button');
+  
+  buttons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+      fillModal(projects[index], index);
+    });
   });
-
-  closeBtn.addEventListener('click', () => {
-    mobilePopupElement.classList.toggle('project-popup-hidden');
-  });
-
-  recentWork.append(projectElement);
-  popupContainer.append(mobilePopupElement);
-});
-};
