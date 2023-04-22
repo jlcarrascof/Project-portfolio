@@ -15,7 +15,6 @@
       liveVersion: 'https://jlcarrascof.github.io/card-portfolio/',
       source: 'https://github.com/jlcarrascof/card-portfolio/'
     },
-  
     {
       id: 'card-1',
       name: 'Multi-Post Stories',
@@ -52,6 +51,7 @@
       liveVersion: 'https://jlcarrascof.github.io/card-portfolio/',
       source: 'https://github.com/jlcarrascof/card-portfolio/'
     },
+    /*
     {
       id: 'card-4',
       name: 'Profesional Art 4',
@@ -64,6 +64,7 @@
       liveVersion: 'https://jlcarrascof.github.io/card-portfolio/',
       source: 'https://github.com/jlcarrascof/card-portfolio/'
     }
+    */
   ];
   
   const gridWorks = document.getElementById('grid_works');
