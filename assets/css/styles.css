@@ -40,6 +40,13 @@ a {
   text-decoration: none;
 }
 
+#error-message {
+  color: red;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  
+}
+
 li {
   list-style: none;
 }
