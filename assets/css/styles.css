@@ -267,7 +267,6 @@ li {
   margin-bottom: 1rem;
 }
 
-
 .ul-popup {
   display: flex;
   gap: 1rem;
@@ -303,12 +302,11 @@ li {
 
 .btnlinks .btnCard {
   width: auto;
-} 
+}
 
 .icon-live-git {
   height: 1rem;
 }
-
 
 .card-text {
   color: #344563;
@@ -326,8 +324,6 @@ li {
   padding-top: 10px;
   display: flex;
 }
-
-
 
 .card-skills ul li {
   /* float: left; */
@@ -782,11 +778,11 @@ li {
 
 /* styles for popup window  */
 .winPopup {
-  width : 100%;
-  height : 100%;
+  width: 100%;
+  height: 100%;
   position: fixed;
-  z-Index : 99;
-  background : rgba(193, 199, 208, 0.9);
+  z-index: 99;
+  background: rgba(193, 199, 208, 0.9);
   backdrop-filter: blur(4px);
   top: 0;
   left: 0;
@@ -805,14 +801,10 @@ li {
 .InfoPopup {
   background-color: rgba(255, 255, 255, 0.838);
   height: 87vh;
-  /* display: flex;
-  flex-direction: column; */
-  /* justify-content: center; */
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   padding: 2rem;
   margin: 4rem;
-  /* gap: 12px;  */
   overflow-y: scroll;
   scroll-behavior: smooth;
   -ms-overflow-style: none;  /* IE and Edge */
@@ -824,10 +816,11 @@ li {
   display: none;
 }
 
-
+/*
 .card-bg-info {
   display: flex;
 }
+*/
 
 .f {
   display: flex;
@@ -845,12 +838,13 @@ li {
   justify-content: space-between;
 }
 
-/* popup desktop version */  
+/* popup desktop version */
+
 @media (min-width: 768px) {
   .lowsection {
     display: flex;
   }
- 
+
   .lowsection .col1 {
     width: 70%;
     padding: 0 1rem;
@@ -859,5 +853,4 @@ li {
   .lowsection .col2 {
     width: 30%;
   }
-
 }
