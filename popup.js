@@ -1,5 +1,6 @@
 /* Project cards data model */
-/* Each project contains: id, name, name2, ShortDescrip, LongDescrip, cardImage, technologies, liveVersion, source */
+/* Each project contains: id, name, name2, ShortDescrip, LongDescrip,
+   cardImage, technologies, liveVersion, source */
 
 const arrCardsInfo = [
   {
@@ -113,17 +114,17 @@ for (let i = 0; i < arrCardsInfo.length; i += 1) {
 
 // Modal popup helper functions
 
-function handleEscKey(event) {
-  if (event.key === 'Escape' && winPopup && loadBody && loadBody.contains(winPopup)) {
-    closeWinPopup();
-  }
-}
-
 function closeWinPopup() {
   if (winPopup && loadBody && loadBody.contains(winPopup)) {
     loadBody.removeChild(winPopup);
     loadBody.style.overflow = 'auto';
     document.removeEventListener('keydown', handleEscKey);
+  }
+}
+
+function handleEscKey(event) {
+  if (event.key === 'Escape' && winPopup && loadBody && loadBody.contains(winPopup)) {
+    closeWinPopup();
   }
 }
 
