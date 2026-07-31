@@ -648,30 +648,6 @@ li {
 }
 
 @media (min-width: 768px) {
-  /*
-  header nav ul {
-    list-style-type: none;
-    display: flex;
-  }
-
-  header nav ul li {
-    padding: 10px 12px;
-  }
-
-  header nav a {
-    text-decoration: none;
-    font-size: 15px;
-    color: #344563;
-    font-weight: 700;
-    line-height: 20px;
-    cursor: pointer;
-  }
-
-  #breadcrumb {
-    display: none;
-  }
-  */
-
   /* Card Section */
 
   .card-container {
@@ -816,19 +792,7 @@ li {
   display: none;
 }
 
-/*
-.card-bg-info {
-  display: flex;
-}
-*/
-
-.f {
-  display: flex;
-  flex-direction: column;
-}
-
 .screenshot-popup {
-  /* object-fit: cover; */
   width: 100%;
   height: auto;
 }
