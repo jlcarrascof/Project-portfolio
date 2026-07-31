@@ -118,13 +118,13 @@ function closeWinPopup() {
   if (winPopup && loadBody && loadBody.contains(winPopup)) {
     loadBody.removeChild(winPopup);
     loadBody.style.overflow = 'auto';
-    document.removeEventListener('keydown', handleEscKey);
   }
 }
 
 function handleEscKey(event) {
-  if (event.key === 'Escape' && winPopup && loadBody && loadBody.contains(winPopup)) {
+  if (event.key === 'Escape') {
     closeWinPopup();
+    document.removeEventListener('keydown', handleEscKey);
   }
 }
 
