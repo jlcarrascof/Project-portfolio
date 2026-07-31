@@ -1,6 +1,5 @@
-/* this module You use an array to store all of the information for all projects */
-/* each project has: name, ShortDescrip, featured image, technologies,
-   link to live version, link to source */
+/* Project cards data model */
+/* Each project contains: id, name, name2, ShortDescrip, LongDescrip, cardImage, technologies, liveVersion, source */
 
 const arrCardsInfo = [
   {
@@ -112,7 +111,7 @@ for (let i = 0; i < arrCardsInfo.length; i += 1) {
   gridWorks.appendChild(div);
 }
 
-// functions realted with popup window
+// Modal popup helper functions
 
 function handleEscKey(event) {
   if (event.key === 'Escape' && winPopup && loadBody && loadBody.contains(winPopup)) {
@@ -133,7 +132,7 @@ function openLink(url) {
   closeWinPopup();
 }
 
-// create popup window
+// Create and render modal popup window
 
 function openPopup(card) {
   loadBody = document.getElementById('loadBody');
@@ -236,7 +235,7 @@ function clickBtn(event) {
   }
 }
 
-/* ***** add click event to button  */
+/* Attach project modal event listeners */
 const btnCards = document.getElementsByClassName('btnCard');
 for (let i = 0; i < btnCards.length; i += 1) {
   btnCards[i].addEventListener('click', clickBtn);
