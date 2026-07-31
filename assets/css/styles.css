@@ -104,6 +104,7 @@ li {
 @media (max-width: 768px) {
   .hamburger {
     display: block;
+    z-index: 100;
   }
 
   .bar {
@@ -139,13 +140,12 @@ li {
     height: 100%;
     text-align: left;
     transition: 0.3s;
-    background-color: #6070ff;
+    background-color: rgba(96, 112, 255, 0.98);
     color: white;
     align-items: flex-start;
     justify-content: flex-start;
-    opacity: 107%;
-    backdrop-filter: blur(10px);
-    mix-blend-mode: multiply;
+    backdrop-filter: blur(8px);
+    z-index: 99;
     overflow-x: hidden;
   }
 
