@@ -792,26 +792,32 @@ li {
   backdrop-filter: blur(4px);
   top: 0;
   left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
 }
 
 .btnClosePopup {
   z-index: 99;
   width: 2rem;
   height: 2rem;
-  margin: 1rem;
   text-align: center;
   cursor: pointer;
   float: right;
 }
 
 .InfoPopup {
-  background-color: rgba(255, 255, 255, 0.838);
-  height: 87vh;
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  max-height: 90vh;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  padding: 2rem;
-  margin: 4rem;
-  overflow-y: scroll;
+  padding: 24px;
+  margin: 0 auto;
+  overflow-y: auto;
   scroll-behavior: smooth;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */

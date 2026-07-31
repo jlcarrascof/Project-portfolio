@@ -118,11 +118,18 @@ for (let i = 0; i < arrCardsInfo.length; i += 1) {
 
 // functions realted with popup window
 
-function closeWinPopup() {
-  loadBody.removeChild(winPopup);
+function handleEscKey(event) {
+  if (event.key === 'Escape' && winPopup && loadBody && loadBody.contains(winPopup)) {
+    closeWinPopup();
+  }
+}
 
-  /* re-activate the scrollbar for the body */
-  loadBody.style.overflow = 'auto';
+function closeWinPopup() {
+  if (winPopup && loadBody && loadBody.contains(winPopup)) {
+    loadBody.removeChild(winPopup);
+    loadBody.style.overflow = 'auto';
+    document.removeEventListener('keydown', handleEscKey);
+  }
 }
 
 function openLink(url) {
@@ -217,6 +224,10 @@ function openPopup(card) {
   btnClose.addEventListener('click', closeWinPopup);
   btnLive.addEventListener('click', () => { openLink(card.liveVersion); });
   btnSrc.addEventListener('click', () => { openLink(card.source); });
+  winPopup.addEventListener('click', (e) => {
+    if (e.target === winPopup) closeWinPopup();
+  });
+  document.addEventListener('keydown', handleEscKey);
 }
 
 /* ********************************************** */
