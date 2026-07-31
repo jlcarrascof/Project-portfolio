@@ -41,9 +41,17 @@ a {
 }
 
 #error-message {
-  color: red;
-  font-size: 25px;
-  margin-bottom: 1.5rem;
+  color: #d93025;
+  background-color: #fff;
+  border-left: 4px solid #d93025;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto 15px;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 li {
@@ -104,6 +112,7 @@ li {
 @media (max-width: 768px) {
   .hamburger {
     display: block;
+    z-index: 100;
   }
 
   .bar {
@@ -139,13 +148,12 @@ li {
     height: 100%;
     text-align: left;
     transition: 0.3s;
-    background-color: #6070ff;
+    background-color: rgba(96, 112, 255, 0.98);
     color: white;
     align-items: flex-start;
     justify-content: flex-start;
-    opacity: 107%;
-    backdrop-filter: blur(10px);
-    mix-blend-mode: multiply;
+    backdrop-filter: blur(8px);
+    z-index: 99;
     overflow-x: hidden;
   }
 
@@ -222,9 +230,9 @@ li {
 }
 
 .card-container {
-  display: grid;
-  grid-template-rows: auto auto auto auto;
-  row-gap: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -293,7 +301,7 @@ li {
 .card-bg-info ul {
   display: flex;
   margin-left: 30px;
-  color: #7a869a;
+  color: #42526e;
   font-size: 13px;
   font-weight: 500;
   line-height: 16px;
@@ -580,17 +588,17 @@ li {
 
 #form input,
 #form textarea {
-  width: 327px;
-  height: 48px;
+  width: 100%;
+  max-width: 600px;
   border-radius: 8px;
   border: none;
+  display: block;
+  margin: 0 auto 20px;
 }
 
 #form input {
-  width: 95%;
   height: 48px;
-  padding: 10px;
-  margin-bottom: 20px;
+  padding: 10px 16px;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -598,12 +606,9 @@ li {
 }
 
 #form textarea {
-  width: 95%;
   border: 1px solid #cfd8dc;
-  border-radius: 8px;
   height: 150px;
-  margin-bottom: 20px;
-  padding: 10px 16px;
+  padding: 12px 16px;
   font-size: 17px;
   line-height: 20px;
   font-weight: 400;
@@ -643,30 +648,6 @@ li {
 }
 
 @media (min-width: 768px) {
-  /*
-  header nav ul {
-    list-style-type: none;
-    display: flex;
-  }
-
-  header nav ul li {
-    padding: 10px 12px;
-  }
-
-  header nav a {
-    text-decoration: none;
-    font-size: 15px;
-    color: #344563;
-    font-weight: 700;
-    line-height: 20px;
-    cursor: pointer;
-  }
-
-  #breadcrumb {
-    display: none;
-  }
-  */
-
   /* Card Section */
 
   .card-container {
@@ -691,24 +672,7 @@ li {
     padding: 1% 2%;
   }
 
-  .card-1 {
-    order: 3;
-  }
-
-  .card-2 {
-    order: 4;
-  }
-
-  .card-3 {
-    order: 1;
-  }
-
-  .card-4 {
-    order: 2;
-  }
-
-  .card-2,
-  .card-4 {
+  #grid_works > div:nth-child(even) .cards {
     flex-direction: row-reverse;
   }
 
@@ -792,26 +756,32 @@ li {
   backdrop-filter: blur(4px);
   top: 0;
   left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
 }
 
 .btnClosePopup {
   z-index: 99;
   width: 2rem;
   height: 2rem;
-  margin: 1rem;
   text-align: center;
   cursor: pointer;
   float: right;
 }
 
 .InfoPopup {
-  background-color: rgba(255, 255, 255, 0.838);
-  height: 87vh;
+  background-color: #fff;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  max-height: 90vh;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  padding: 2rem;
-  margin: 4rem;
-  overflow-y: scroll;
+  padding: 24px;
+  margin: 0 auto;
+  overflow-y: auto;
   scroll-behavior: smooth;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
@@ -822,19 +792,7 @@ li {
   display: none;
 }
 
-/*
-.card-bg-info {
-  display: flex;
-}
-*/
-
-.f {
-  display: flex;
-  flex-direction: column;
-}
-
 .screenshot-popup {
-  /* object-fit: cover; */
   width: 100%;
   height: auto;
 }
