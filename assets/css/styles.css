@@ -580,17 +580,17 @@ li {
 
 #form input,
 #form textarea {
-  width: 327px;
-  height: 48px;
+  width: 100%;
+  max-width: 600px;
   border-radius: 8px;
   border: none;
+  display: block;
+  margin: 0 auto 20px;
 }
 
 #form input {
-  width: 95%;
   height: 48px;
-  padding: 10px;
-  margin-bottom: 20px;
+  padding: 10px 16px;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -598,12 +598,9 @@ li {
 }
 
 #form textarea {
-  width: 95%;
   border: 1px solid #cfd8dc;
-  border-radius: 8px;
   height: 150px;
-  margin-bottom: 20px;
-  padding: 10px 16px;
+  padding: 12px 16px;
   font-size: 17px;
   line-height: 20px;
   font-weight: 400;
