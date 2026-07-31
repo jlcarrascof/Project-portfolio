@@ -65,7 +65,7 @@ for (let i = 0; i < arrCardsInfo.length; i += 1) {
   div = document.createElement('div');
   div.id = card.id;
   div.innerHTML = `
-    <div class="cards card-1">
+    <div class="cards">
                 <div>
                     <img src="${card.cardImage}" alt="${card.alternateTextImage}" class="screenshot">
                 </div>

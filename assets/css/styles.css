@@ -230,9 +230,9 @@ li {
 }
 
 .card-container {
-  display: grid;
-  grid-template-rows: auto auto auto auto;
-  row-gap: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -696,24 +696,7 @@ li {
     padding: 1% 2%;
   }
 
-  .card-1 {
-    order: 3;
-  }
-
-  .card-2 {
-    order: 4;
-  }
-
-  .card-3 {
-    order: 1;
-  }
-
-  .card-4 {
-    order: 2;
-  }
-
-  .card-2,
-  .card-4 {
+  #grid_works > div:nth-child(even) .cards {
     flex-direction: row-reverse;
   }
 
