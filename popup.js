@@ -222,14 +222,17 @@ function openPopup(card) {
 /* ********************************************** */
 
 function clickBtn(event) {
-  const btn = event.srcElement;
   event.preventDefault();
-  const numCard = parseInt(btn.id.slice(-1), 10);
-  openPopup(arrCardsInfo[numCard]);
+  const btn = event.currentTarget;
+  const cardId = btn.id.replace('btn-', '');
+  const cardData = arrCardsInfo.find((card) => card.id === cardId);
+  if (cardData) {
+    openPopup(cardData);
+  }
 }
 
 /* ***** add click event to button  */
-const btn = document.getElementsByClassName('btnCard');
-for (let i = 0; i < btn.length; i += 1) {
-  btn[i].addEventListener('click', clickBtn);
+const btnCards = document.getElementsByClassName('btnCard');
+for (let i = 0; i < btnCards.length; i += 1) {
+  btnCards[i].addEventListener('click', clickBtn);
 }
