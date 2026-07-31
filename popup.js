@@ -8,7 +8,7 @@ const arrCardsInfo = [
     name: 'Tonic',
     name2: 'Canopy',
     ShortDescrip: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    LongDescrip: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
+    LongDescrip: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essential.",
     cardImage: './assets/images/image1.svg',
     alternateTextImage: 'header-main-project image.',
     technologies: ['HTML', 'CSS', 'Javascript'],
@@ -20,34 +20,34 @@ const arrCardsInfo = [
     name: 'Multi-Post Stories',
     name2: 'Canopy',
     ShortDescrip: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
-    LongDescrip: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
+    LongDescrip: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essential.",
     cardImage: './assets/images/image2.svg',
     alternateTextImage: 'secondary project ShortDescrip image.',
-    technologies: ['CSS', 'Boostrap', 'Ruby'],
+    technologies: ['CSS', 'Bootstrap', 'Ruby'],
     liveVersion: 'https://jlcarrascof.github.io/card-portfolio/',
     source: 'https://github.com/jlcarrascof/card-portfolio/',
   },
   {
     id: 'card-2',
-    name: 'Profesional Art 2',
+    name: 'Professional Art 2',
     name2: 'Printing Data',
     ShortDescrip: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
-    LongDescrip: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
+    LongDescrip: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essential.",
     cardImage: './assets/images/image3.svg',
     alternateTextImage: 'secondary project ShortDescrip image.',
-    technologies: ['CSS', 'Boostrap', 'Ruby'],
+    technologies: ['CSS', 'Bootstrap', 'Ruby'],
     liveVersion: 'https://jlcarrascof.github.io/card-portfolio/',
     source: 'https://github.com/jlcarrascof/card-portfolio/',
   },
   {
     id: 'card-3',
-    name: 'Profesional Art 3',
+    name: 'Professional Art 3',
     name2: 'Printing Data',
     ShortDescrip: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
-    LongDescrip: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
+    LongDescrip: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essential.",
     cardImage: './assets/images/image4.svg',
     alternateTextImage: 'secondary project ShortDescrip image.',
-    technologies: ['CSS', 'Boostrap', 'Ruby'],
+    technologies: ['CSS', 'Bootstrap', 'Ruby'],
     liveVersion: 'https://jlcarrascof.github.io/card-portfolio/',
     source: 'https://github.com/jlcarrascof/card-portfolio/',
   },
@@ -78,19 +78,15 @@ for (let i = 0; i < arrCardsInfo.length; i += 1) {
                             <p class="desktop">${card.name2}</p>
                             <ul>
                                 <li>Full Stack Dev</li>
-                                <li>2015</li>
+                                <li>2024</li>
                             </ul>
                         </div>
                     </div>
                     <div class="card-text mobile">
-                        <p>
-                            A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required A daily selection of privately personalized reads; no accounts or sign-ups required
-                        </p>
+                        <p>${card.ShortDescrip}</p>
                     </div>
                     <div class="card-text desktop">
-                        <p>
-                            Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required A daily selection of privately personalized reads; no accounts or sign-ups required7
-                        </p>
+                        <p>${card.ShortDescrip}</p>
                     </div>
                     <div class="card-skills mobile">
                         <ul>
@@ -169,7 +165,7 @@ function openPopup(card) {
                         <h2 class="desktop">${card.name2}</h2>
                         <ul class="ul-popup">
                             <li>Full Stack Dev</li>
-                            <li>2015</li>
+                            <li>2024</li>
                         </ul>
                       </div>
                       <div class="screenshot-popup">
@@ -178,10 +174,8 @@ function openPopup(card) {
                     </div>
                     <div class="lowsection">
                       <div class="col1">
-                        <div class="card-text ">
-                            <p>
-                                exampple XXX A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required A daily selection of privately personalized reads; no accounts or sign-ups required
-                            </p>
+                        <div class="card-text">
+                            <p>${card.LongDescrip}</p>
                         </div>
                       </div>
                       <div class="col2">
